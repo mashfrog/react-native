@@ -166,7 +166,8 @@ RCT_EXPORT_METHOD(showShareActionSheetWithOptions:(NSDictionary *)options
   shareController.completionWithItemsHandler = ^(NSString *activityType, BOOL completed, __unused NSArray *returnedItems, NSError *activityError) {
     if (activityError) {
       failureCallback(activityError);
-    } else if (completed){
+    }
+    else if (completed) {
       successCallback(@[@(completed), RCTNullIfNil(activityType)]);
     }
   };
