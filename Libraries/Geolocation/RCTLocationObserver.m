@@ -386,7 +386,7 @@ RCT_EXPORT_METHOD(getCurrentPosition:(RCTLocationOptions)options
 
 }
 
-static void checkLocationConfig()
+static void checkLocationConfig(void)
 {
 #if RCT_DEV
   if (!([[NSBundle mainBundle] objectForInfoDictionaryKey:@"NSLocationWhenInUseUsageDescription"] ||

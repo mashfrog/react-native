@@ -99,7 +99,7 @@ CGFloat RCTDegreesToRadians(CGFloat degrees)
 float UIAnimationDragCoefficient(void);
 #endif
 
-CGFloat RCTAnimationDragCoefficient()
+CGFloat RCTAnimationDragCoefficient(void)
 {
 #if TARGET_IPHONE_SIMULATOR
   if (NSClassFromString(@"XCTest") != nil) {

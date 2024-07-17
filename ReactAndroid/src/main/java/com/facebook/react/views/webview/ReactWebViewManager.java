@@ -81,7 +81,7 @@ import org.json.JSONObject;
 @ReactModule(name = ReactWebViewManager.REACT_CLASS)
 public class ReactWebViewManager extends SimpleViewManager<WebView> {
 
-  public static final String REACT_CLASS = "RCTWebView";
+  public static final String REACT_CLASS = "RCTWKWebView";
 
   protected static final String HTML_ENCODING = "UTF-8";
   protected static final String HTML_MIME_TYPE = "text/html";

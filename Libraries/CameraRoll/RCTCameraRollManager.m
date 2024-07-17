@@ -335,7 +335,7 @@ RCT_EXPORT_METHOD(deletePhotos:(NSArray<NSString *>*)assets
     ];
 }
 
-static void checkPhotoLibraryConfig()
+static void checkPhotoLibraryConfig(void)
 {
 #if RCT_DEV
   if (![[NSBundle mainBundle] objectForInfoDictionaryKey:@"NSPhotoLibraryUsageDescription"]) {
